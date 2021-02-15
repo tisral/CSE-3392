@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Course Catalogue</title>
+
+
+</head>
+
+<body style="background-color:dodgerblue">
+
+    <nav class="navbar navbar-light" style="background-color: coral;">
+        <span class="navbar-brand mb-0 h1" style="color:white">University of Texas at Arlington</span>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: coral;">
+        <!-- <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse container justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav" >
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Academics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Student Life</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Giving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">Athletics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h6"  href="#">News Center</a>
+                </li>
+
+
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-4" >
+
+      
+        <select class="custom-select">
+            <option selected>Undergraduate</option>
+            <option value="1">Graduate</option>
+        </select>
+
+        <select class="custom-select my-2">
+            <option selected>Select a college</option>
+            <option value="1">College of Architecture, Planning, and Public Affairs</option>
+            <option value="2">College of Business</option>
+            <option value="3">College of Education</option>
+            <option value="3">College of Engineering</option>
+            <option value="3">College of Liberal Arts</option>
+            <option value="3">College of Nursing and Health Innovation</option>
+            <option value="3">College of Science</option>
+            <option value="3">School of Social Work</option>
+            <option value="3">Honors College</option>
+            <option value="3">Division of Student Success</option>
+            <option value="3">Special Programs &​ Centers</option>
+          </select>
+
+          <!-- <select class="custom-select">
+            <option selected>Select a major</option>
+            <option value="1">College of Engineering</option>
+            <option value="2">Computer Science</option>
+            <option value="3">Computer Engineering</option>
+            <option value="3">Mechanical Engineering</option>
+            <option value="3">Electrical Engineering</option>
+            <option value="3">Aerospace Engineering</option>
+          </select> -->
+
+          <div class="btn-group my-2">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a major
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg-right">
+                <h6 class="dropdown-header">College of Engineering</h6>
+                <a class="dropdown-item" href="#">Computer Software Engineering</a>
+                <a class="dropdown-item" href="#">Computer Science</a>
+                <a class="dropdown-item" href="#">Computer Engineering</a>
+                <a class="dropdown-item" href="#">Mechanical Engineering</a>
+                <a class="dropdown-item" href="#">Electrical Engineering</a>
+                <a class="dropdown-item" href="#">Aerospace Engineering</a>
+               
+            </div>
+          </div>
+
+        <div class="row my-4" >
+            <div class="col-lg-9 md-9 sm-12" style="background-color:white; border-radius: 2mm; padding: 2%;">
+               
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="bachelors-tab" data-toggle="tab" href="#bachelors" role="tab" aria-controls="bachelors" aria-selected="false">Bachelors</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="minor-tab" data-toggle="tab" href="#minor" role="tab" aria-controls="minor" aria-selected="false">Minor</a>
+                      </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="degreePlan-tab" data-toggle="tab" href="#degreePlan" role="tab" aria-controls="degreePlan" aria-selected="false">Degree Plan & Curriculum</a>
+                      </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+                    </li>
+                 </ul>
+                  <div class="tab-content my-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        The Department of Computer Science and Engineering is one of seven departments in the College of Engineering, the fourth-largest engineering college in Texas. Its mission is to serve the needs of the region, the state, and the nation by providing quality educational and innovative, relevant research programs in computer science and engineering. The department strives to offer first-rate undergraduate, graduate, and continuing education opportunities; conduct research and development technologies in selected areas, and facilitate technology transfer for the betterment of the quality of life. Its internationally recognized faculty members are engaged in breakthrough research across the leading areas of computer science and engineering.</div>
+                    <div class="tab-pane fade" id="bachelors" role="tabpanel" aria-labelledby="bachelors-tab">
+                        <h6> CSE 1000. FRESHMAN UNDERGRADUATE RESEARCH. 0 Hours.</h6>
+                        Freshman level undergraduate research course. Prerequisites: Departmental good standing and permission of instructor. May be taken a maximum of 3 times.
+                        
+                        <br>
+                        <br>
+                        <h6>CSE 1105. INTRODUCTION TO COMPUTER SCIENCE AND ENGINEERING. 1 Hour.</h6>
+                        Introduction to engineering concepts, the computer science and engineering disciplines, skills for written communication, and departmental orientation.
+                      
+                        <br>
+                        <br>
+                        <h6>CSE 1205. INTRODUCTION TO COMPUTER SCIENCE AND ENGINEERING. 2 Hours.</h6>  
+                        A practical approach to hands-on computer hardware and software systems in a laboratory environment. Students will be exposed to basic design concepts using off-the-shelf hardware components and tools that enable the design of complex systems. Some College of Engineering requirements are satisfied by the content of this course. Prerequisite: CSE 1310.
+                       
+                        <br>
+                        <br>
+                        <h6>CSE 1301. COMPUTER LITERACY. 3 Hours. (TCCN = COSC 1301)</h6> 
+                        For those persons having an interest in finding out what a computer is (and is not), the types of problems suited for computers, and how to utilize a computer to solve problems. The organization and characteristics of computers; application of commercial software such as word processors, spreadsheets, database packages, and communications packages.
+                        
+                        <br>
+                        <br>
+                        <h6> CSE 1309. INTRODUCTION TO PROGRAMMING FOR NON-ENGINEERING MAJORS. 3 Hours.</h6>
+                        An introduction to the algorithmic process and to programming using basic control and data structures. This course is taught using the Python programming language. Prerequisite: Corequisite MATH 1302.
+
+                    </div>
+
+                    <div class="tab-pane fade" id="minor" role="tabpanel" aria-labelledby="minor-tab">
+                       <p>
+
+                        
+To receive a minor in Computer Science, a student must not be receiving his/her major degree from the department and must complete all courses listed with a grade of C or better in each course. Any substitutions must be approved in advance by the department chairperson.
+<br><br>
+Requirements for a Minor in Computer Science
+<br><br>
+To receive a minor in Computer Science, a student must complete the following courses with a grade of C or better in each:
+<br><br>
+CSE 1320	INTERMEDIATE PROGRAMMING	3<br>
+CSE 1325	OBJECT-ORIENTED PROGRAMMING	3<br>
+CSE 2315	DISCRETE STRUCTURES	3<br>
+CSE 3318	ALGORITHMS & DATA STRUCTURES	3<br><br>
+Any two 3000 or 4000 level courses with a grade of C or better in each as well as all required prequisites for the chosen courses	6<br><br>
+Total Hours	18
+
+<br><br>
+<sup>1</sup>	
+Grade of C or better in each, as well as all required prerequisites for the chosen courses.
+                       </p>
+
+                    </div>
+                    <div class="tab-pane fade" id="degreePlan" role="tabpanel" aria-labelledby="degreePlan-tab">
+                        <p><a href="https://cdn.web.uta.edu/-/media/project/website/engineering/documents-and-forms/degree-plans/software-engineering/2020-se-f.ashx?revision=6a4573ff-0a42-4821-83a9-4a940ad34d29">2020 Software Engineering Flowchart</a></p>
+
+                        <p><a href="https://cdn.web.uta.edu/-/media/project/website/engineering/documents-and-forms/degree-plans/computer-science/2020-se-c.ashx?revision=d963db9e-b3f1-4d5f-bf13-f53ef1dabc57">2020 Software Engineering Curriculum</a></p>
+
+                    </div>
+                    <div class="tab-pane fade" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+
+                        <h6>Hong Jiang</h6>
+                        Professor and Department Chair, Wendell H. Nedderman Endowed Professor
+                        
+                        <br>
+                        <br>
+                        <h6>Lynn Peterson</h6>
+                        Professor, Associate Dean of Engineering
+                        
+
+                        <br>
+                        <br>
+                        <h6>Ramez Elmasri</h6>
+                        Professor, Associate Chair
+                        
+                        <br>
+                        <br>
+                        <h6>Ishfaq Ahmad</h6>
+                        Professor
+                        
+                        <br>
+                        <br>
+                        <h6>Bill Carroll</h6>
+                        Professor
+                        
+                        
+                    </div>
+                  </div>
+
+
+
+            </div>
+        
+            <div class="col-lg-3 md-3 sm-3"  >
+                <br>
+                <br>
+                <div class="card" >
+                    <div class="card-header">
+                        Contact Information
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="http://cse.uta.edu">Department of Computer Science</a></li>
+                      <li class="list-group-item"><a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse/students/undergraduate-advising">Undergraduate Advising</a></li>
+                      <li class="list-group-item">Phone: <a href="tel:817-272-3785">817-272-3785</a></li>
+                      <li class="list-group-item">Fax: <a href="fax:+8172723784">817-272-3784</a></li>
+
+                      
+                    <li class="list-group-item"> Address: 640 Engineering Research Building, Box 19015
+                        UT Arlington
+                        Arlington, Texas 76019 USA</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
